@@ -19,7 +19,7 @@ struct Post: Decodable, Identifiable {
     }
     // set objects from url
     let title: String
-    let url: String
+    let url: String? // set as an optional due to there are empty strings on hn.algolia.com
     let points: Int
     let objectID: String
 }

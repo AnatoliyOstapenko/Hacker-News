@@ -16,29 +16,34 @@ struct ContentView: View {
         
         NavigationView {
             // set container (like TableView in UIKit) to show data from posts array.
-            // it's closure when post is an instance to inilizate Post struct and works like "for in"l oop
-            List(posts) { post in
-                Text(post.title)
+            // it's closure when post is an instance to inilizate Post struct and works like "for in" loop
+            List(networkManager.post) { post in
+                HStack {
+                    Text(String(post.points)) // points from NetworkData
+                    Text(post.title) // title from NetworkData
+                    
+                }
+                
             }
+            // set title on top of the screen
+            .navigationBarTitle("Hacker News")
         }
-        .navigationBarTitle("Hacker News")
+        .onAppear {
+            self.networkManager.fetchData()
+        }
         
         
     }
-    
-    
-    
-    
     
 }
 
 // added array of posts
 
-let posts = [
-    Post(title: "Title 1", url: "Url 1", points: 1, objectID: "objectID A"),
-    Post(title: "Title 2", url: "Url 2", points: 2, objectID: "objectID B"),
-    Post(title: "Title 3", url: "Url 3", points: 3, objectID: "objectID C")
-]
+//let posts = [
+//    Post(title: "Title 1", url: "Url 1", points: 1, objectID: "objectID A"),
+//    Post(title: "Title 2", url: "Url 2", points: 2, objectID: "objectID B"),
+//    Post(title: "Title 3", url: "Url 3", points: 3, objectID: "objectID C")
+//]
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

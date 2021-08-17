@@ -44,8 +44,12 @@ class NetworkManager: ObservableObject {
                 // get results or decoded data from url
                 let decodedData = try decoder.decode(NetworkData.self, from: safeData)
                 
-                // get data from url via NetworkManager
-                self.post = decodedData.hits
+                // transfer data from url via NetworkManager
+                // GCD framework to avoid app freezing
+                DispatchQueue.main.async {
+                    self.post = decodedData.hits
+                }
+                
                 
                 
             } catch {
