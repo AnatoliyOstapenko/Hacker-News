@@ -13,6 +13,8 @@
 		FA0EAF7726CBFFAE00C6B792 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0EAF7626CBFFAE00C6B792 /* Preview Assets.xcassets */; };
 		FA0EAF8026CC001600C6B792 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA0EAF7F26CC001600C6B792 /* README.md */; };
 		FA0EAF8326CC005500C6B792 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0EAF8226CC005500C6B792 /* Launch Screen.storyboard */; };
+		FA0EAF8726CC141600C6B792 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EAF8626CC141600C6B792 /* NetworkManager.swift */; };
+		FA0EAF8E26CC19B100C6B792 /* NetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EAF8D26CC19B100C6B792 /* NetworkData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FA0EAF7826CBFFAE00C6B792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0EAF7F26CC001600C6B792 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FA0EAF8226CC005500C6B792 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FA0EAF8626CC141600C6B792 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA0EAF8D26CC19B100C6B792 /* NetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		FA0EAF6E26CBFFA900C6B792 /* Hacker News */ = {
 			isa = PBXGroup;
 			children = (
+				FA0EAF8526CC13CD00C6B792 /* Models */,
 				FA0EAF6F26CBFFA900C6B792 /* Hacker_NewsApp.swift */,
 				FA0EAF7126CBFFA900C6B792 /* ContentView.swift */,
 				FA0EAF7326CBFFAE00C6B792 /* Assets.xcassets */,
@@ -73,6 +78,15 @@
 				FA0EAF7626CBFFAE00C6B792 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA0EAF8526CC13CD00C6B792 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA0EAF8626CC141600C6B792 /* NetworkManager.swift */,
+				FA0EAF8D26CC19B100C6B792 /* NetworkData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0EAF8E26CC19B100C6B792 /* NetworkData.swift in Sources */,
+				FA0EAF8726CC141600C6B792 /* NetworkManager.swift in Sources */,
 				FA0EAF7226CBFFA900C6B792 /* ContentView.swift in Sources */,
 				FA0EAF7026CBFFA900C6B792 /* Hacker_NewsApp.swift in Sources */,
 			);
