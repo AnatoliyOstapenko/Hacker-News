@@ -32,13 +32,23 @@ struct WebView: UIViewRepresentable {
     
     let urlString: String?
     
-    func makeUIView(context: Context) -> some UIView {
+    func makeUIView(context: Context) -> WebView.UIViewType {
         // WKWebView class to add web content to my app
         return WKWebView()
     }
-    
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        <#code#>
+    // change UIViewType on WKWebView
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        // unwrapping urlStrig constant
+        guard let safeUrlString = urlString else {
+            return
+        }
+        // unwrapping path to a remote file
+        guard let url = URL(string: safeUrlString) else {
+            return
+        }
+        // URL load request
+        let request = URLRequest(url: url)
+        // navigates to a requested URL
+        uiView.load(request)
     }
-    
 }

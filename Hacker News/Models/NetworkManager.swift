@@ -50,17 +50,13 @@ class NetworkManager: ObservableObject {
                     self.post = decodedData.hits
                 }
                 
-                
-                
             } catch {
                 print(error)
-
+                
             }
-            
-            
             
         }
         // start the task (Resumes the task, if it is suspended)
         dataTask.resume()
-  }
+    }
 }
