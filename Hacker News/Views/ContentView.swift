@@ -13,16 +13,21 @@ struct ContentView: View {
     @ObservedObject var networkManager = NetworkManager()
     
     var body: some View {
-        
+        //list embedding
         NavigationView {
+
             // set container (like TableView in UIKit) to show data from posts array.
             // it's closure when post is an instance to inilizate Post struct and works like "for in" loop
             List(networkManager.post) { post in
-                HStack {
-                    Text(String(post.points)) // points from NetworkData
-                    Text(post.title) // title from NetworkData
-                    
+                //set a transition link from current View to Detail View
+                NavigationLink(destination: DetailView(url: post.url)) {
+                    HStack {
+                        Text(String(post.points)) // points from NetworkData
+                        Text(post.title) // title from NetworkData
+                        
+                    }
                 }
+                
                 
             }
             // set title on top of the screen
