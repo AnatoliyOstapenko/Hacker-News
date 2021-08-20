@@ -1,23 +1,23 @@
+![Image](https://github.com/AnatoliyOstapenko/Fresh-Milk/blob/main/Fresh%20Milk/Assets.xcassets/CODE.imageset/CODE.png)
+
 # Hacker News
-
-## About Project:
-
 This news app in SwiftUI with features: global news by API.
 
-## Project objective:
 
-Programmatically using a REST API 
+:octocat:  **Project objective:**
 
-Learn about the delegate pattern in SwiftUI. 
+:heavy_check_mark: Programmatically using a REST API 
 
-SwiftUI protocols and extensions. 
+:heavy_check_mark: Learn about the delegate pattern in SwiftUI. 
 
-SwiftUI closures and completion handlers. 
+:heavy_check_mark: SwiftUI protocols and extensions. 
 
-Using URLSession to network and make HTTP requests. 
+:heavy_check_mark: SwiftUI closures and completion handlers. 
 
-Parse JSON with the native Encodable and Decodable protocols. 
+:heavy_check_mark: Using URLSession to network and make HTTP requests. 
 
-Using GCD (Grand Central Dispatch) to fetch the main thread. 
+:heavy_check_mark: Parse JSON with the native Encodable and Decodable protocols. 
+
+:heavy_check_mark: Using GCD (Grand Central Dispatch) to fetch the main thread. 
 
 
