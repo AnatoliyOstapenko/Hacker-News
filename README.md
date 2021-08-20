@@ -1,6 +1,7 @@
 ![Image](https://github.com/AnatoliyOstapenko/Hacker-News/blob/main/Hacker%20News/Assets.xcassets/CODE256.imageset/CODE256.png)
 
 # Hacker News
+
 ### This news app in SwiftUI with features: global news by API.
 
 :octocat:  **Project objective:**
