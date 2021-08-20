@@ -4,6 +4,8 @@
 This news app in SwiftUI with features: global news by API.
 
 
+
+
 :octocat:  **Project objective:**
 
 :heavy_check_mark: Programmatically using a REST API 
