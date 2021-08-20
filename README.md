@@ -1,4 +1,4 @@
-![Image](https://github.com/AnatoliyOstapenko/Fresh-Milk/blob/main/Fresh%20Milk/Assets.xcassets/CODE.imageset/CODE.png)
+![Image](https://github.com/AnatoliyOstapenko/Hacker-News/blob/main/Hacker%20News/Assets.xcassets/CODE256.imageset/CODE256.png)
 
 # Hacker News
 This news app in SwiftUI with features: global news by API.
